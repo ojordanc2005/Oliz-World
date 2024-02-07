@@ -1,0 +1,67 @@
+/*oliz styles*/ 
+
+/* this contains the styling for my homepage. Additional pages that are similar will refer do another, generic, css doc */
+
+/*
+TO-DO:
+understand class, flex, grid, 
+*/
+
+/*My colors: purple- #7143FF; blue- #00021E8; yellow- #D4CE00; beige?- #D0CCB9   */
+
+.grid-container{
+	display: grid;
+	grid-template-areas:        
+		'header header header'         /* ---------- */
+		'sidebar main leftmain'         /* -- : ----- */
+		'footer footer footer' ;       /* ---------- */
+	grid-template-columns: 100px auto 200px; /* Define column widths */
+    grid-template-rows: auto 0.9fr auto; /* Define row heights */
+    height: 100vh; 		
+    grid-gap: 5px;
+}
+
+.header{
+
+	grid-area: header;
+	text-align: center;
+	color: white;
+	background-color: #7143FF;
+	border: 5px solid gold;
+}
+
+.main{
+	
+	padding: 25px;
+	grid-area: main;
+	color: black;
+}
+
+.leftmain{
+	text-align: center;
+	grid-area: leftmain;
+	background-color: #f0f0f0;
+}
+
+.sidebar{
+	grid-area: sidebar;
+	background-color: blue;
+	border: 5px solid gold;  
+}
+
+.sidebar-item{
+	font-size: 1.15rem;
+	background-color:blue;
+	color: white;
+}
+
+.footer{
+	grid-area: footer;
+	text-align: center;
+	color: white;
+	background-color: #333;
+	border-top: 5px solid gold;  
+}
+
+
+
