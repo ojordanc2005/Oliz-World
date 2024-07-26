@@ -1,0 +1,71 @@
+/*textstylez.css*/
+/*secondarystylez.css*/
+/* this contains the styles for the secondary pages on my website, 
+   almost identical to secondary stylez other than text formatting */
+
+
+.grid-container{
+	display: grid;
+	grid-template-areas:        
+		'header header header'         
+		'sidebar main leftmain'       
+		'footer footer footer' ;       
+	grid-template-columns: 100px auto 5px; 
+    grid-template-rows: auto 1fr auto; 
+    height: 100vh; 		
+    grid-gap: 5px;
+}
+
+.header{
+	grid-area: header;
+	text-align: center;
+	color: white;
+	background-color: #7143FF;
+	border: 5px solid gold;      
+}
+
+.main{
+	grid-area: main;
+	color: black;
+	text-align: center;
+	line-height: 2;
+}
+
+.main-contents{
+	color: black;
+	line-height: 2;
+	text-align: left;
+	text-indent: 80px;
+	margin-left: 130px;
+	margin-right: 130px;
+	margin-bottom: 100px;
+}
+
+.leftmain{
+	grid-area: leftmain;
+	background-color: #f0f0f0;
+}
+
+.sidebar{
+	grid-area: sidebar;
+	background-color: blue;
+	border: 5px solid gold;  
+}
+
+.sidebar-item{
+	font-size: 1.15rem;
+	background-color:blue;
+	color: white;
+}
+
+.footer{
+	grid-area: footer;
+	text-align: center;
+	color: white;
+	background-color: #333;
+	border-top: 5px solid gold;
+}
+
+
+
+
